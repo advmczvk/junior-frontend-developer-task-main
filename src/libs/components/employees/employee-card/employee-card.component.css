@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: center;
   color: #eef1ef;
+  min-width: fit-content;
+  overflow: auto;
 }
 
 .employee {
@@ -16,10 +18,9 @@
 
 .subordinates {
   height: 100%;
-  width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .divide {
@@ -32,7 +33,7 @@
 .divide-vertical {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 5px;
   background-color: #eef1ef;
 }
