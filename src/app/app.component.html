@@ -1,0 +1,19 @@
+<div>
+  <mat-form-field class="emp-select">
+    <mat-label>Select an employee</mat-label>
+    <mat-select
+      [(ngModel)]="selectedEmp"
+      (selectionChange)="loadStructure($event)"
+    >
+      <mat-option *ngFor="let employee of employees" [value]="employee">
+        {{ employee.firstName }} {{ employee.lastName }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <app-employee-card
+    class="root-emp"
+    *ngIf="hierarchy"
+    [employee]="hierarchy"
+  />
+</div>
