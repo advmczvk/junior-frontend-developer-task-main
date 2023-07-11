@@ -1,7 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { MatSelect } from '@angular/material/select';
 import { Employee } from 'src/libs/models';
-import { EmployeeService } from 'src/libs/services/employee.service';
+import { EmployeeService } from 'src/services/employee.service';
 
 @Component({
   selector: 'app-root',

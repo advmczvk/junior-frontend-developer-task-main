@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
-import { EmployeesApiClient } from '../api/clients/employees';
+import { EmployeesApiClient } from '../libs/api/clients/employees';
 import { Observable, map } from 'rxjs';
-import { Employee } from '../models';
+import { Employee } from '../libs/models';
 
 @Injectable({
   providedIn: 'root',
