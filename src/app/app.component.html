@@ -10,6 +10,13 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
+
+  <h1>Hierarchy</h1>
+  <div class="hierarchy-container">
+    <app-employee-path class="root-emp" *ngIf="path" [path]="path" />
+  </div>
+
+  <h1>Subordinates</h1>
   <div class="hierarchy-container">
     <app-employee-card
       class="root-emp"

@@ -7,8 +7,7 @@
 .emp-select {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
+  justify-content: flex-start;
   width: fit-content;
   margin: 1rem auto;
 }
@@ -19,5 +18,15 @@
 
 .hierarchy-container {
   max-width: 100%;
+  width: fit-content;
   overflow: auto;
+  margin-bottom: 3rem !important;
+  margin: auto;
+}
+
+h1 {
+  width: fit-content;
+  margin: auto;
+  color: #eef1ef;
+  border-bottom: 3px solid #eef1ef;
 }

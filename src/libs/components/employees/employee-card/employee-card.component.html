@@ -1,5 +1,5 @@
 <div class="card">
-  <span class="divide"></span>
+  <span *ngIf="!root" class="divide"></span>
   <div class="employee">{{ employee.firstName }} {{ employee.lastName }}</div>
   <span *ngIf="employee.subordinates.length > 0" class="divide"></span>
   <span *ngIf="employee.subordinates.length > 1" class="divide-vertical"></span>
@@ -7,6 +7,7 @@
     <app-employee-card
       *ngFor="let subordinate of employee.subordinates"
       [employee]="subordinate"
+      [root]="false"
     />
   </div>
 </div>

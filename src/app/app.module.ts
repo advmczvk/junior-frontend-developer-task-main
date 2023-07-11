@@ -8,21 +8,19 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { EmployeeCardComponent } from 'src/libs/components/employees/employee-card/employee-card.component';
+import { EmployeePathComponent } from 'src/libs/components/employees/employee-path/employee-path.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    EmployeeCardComponent
-  ],
+  declarations: [AppComponent, EmployeeCardComponent, EmployeePathComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatSelectModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

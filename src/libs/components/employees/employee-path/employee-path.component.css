@@ -1,0 +1,26 @@
+.employee {
+  border: 3px solid #eef1ef;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 0 1rem;
+  background-color: #7d98a1;
+  width: fit-content;
+  color: #eef1ef;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.path {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eef1ef;
+}
+
+.path:last-child > svg {
+  display: none;
+}
