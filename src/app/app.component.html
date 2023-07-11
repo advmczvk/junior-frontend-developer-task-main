@@ -1,4 +1,4 @@
-<div>
+<div class="container">
   <mat-form-field class="emp-select">
     <mat-label>Select an employee</mat-label>
     <mat-select
@@ -10,10 +10,11 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
-
-  <app-employee-card
-    class="root-emp"
-    *ngIf="hierarchy"
-    [employee]="hierarchy"
-  />
+  <div class="hierarchy-container">
+    <app-employee-card
+      class="root-emp"
+      *ngIf="hierarchy"
+      [employee]="hierarchy"
+    />
+  </div>
 </div>
